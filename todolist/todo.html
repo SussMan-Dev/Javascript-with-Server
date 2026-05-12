@@ -4,80 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product List</title>
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            margin: 0;
-            min-height: 100vh;
-            background: #f4f7fb;
-            color: #1f2937;
-            font-family: Arial, sans-serif;
-        }
-
-        .page {
-            width: min(900px, calc(100% - 32px));
-            margin: 48px auto;
-        }
-
-        h1 {
-            margin: 0 0 20px;
-            font-size: 32px;
-            font-weight: 700;
-        }
-
-        .table-wrapper {
-            overflow-x: auto;
-            border: 1px solid #d9e2ec;
-            border-radius: 8px;
-            background: #ffffff;
-            box-shadow: 0 16px 40px rgba(15, 23, 42, 0.08);
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-
-        th,
-        td {
-            padding: 14px 18px;
-            text-align: left;
-            border-bottom: 1px solid #e5e7eb;
-        }
-
-        th {
-            background: #0f766e;
-            color: #ffffff;
-            font-size: 14px;
-            text-transform: uppercase;
-        }
-
-        tr:last-child td {
-            border-bottom: 0;
-        }
-
-        tbody tr:hover {
-            background: #ecfdf5;
-        }
-
-        td:first-child {
-            width: 90px;
-            font-weight: 700;
-            color: #0f766e;
-        }
-
-        td:last-child {
-            font-weight: 700;
-        }
-    </style>
+    <link rel="stylesheet" href="todolist.css">
 </head>
 <body>
     <main class="page">
         <h1>Product List</h1>
-
+        <button onclick="createProductForm()">Create Product</button>
+        <form id="createProductForm"></form>
         <div class="table-wrapper">
             <table>
                 <thead>

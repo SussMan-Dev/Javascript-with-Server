@@ -1,0 +1,144 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    padding: 40px;
+    color: #333;
+}
+
+/* Main container */
+.page {
+    max-width: 1100px;
+    margin: auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Title */
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #1e293b;
+}
+
+/* Create button */
+button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+/* Main create product button */
+.page > button {
+    background: #2563eb;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.page > button:hover {
+    background: #1d4ed8;
+}
+
+/* Form */
+#createProductForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Labels */
+#createProductForm label {
+    font-weight: bold;
+    color: #334155;
+}
+
+/* Inputs */
+#createProductForm input {
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    outline: none;
+    transition: 0.2s;
+}
+
+#createProductForm input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 4px rgba(37, 99, 235, 0.3);
+}
+
+/* Add product button inside form */
+#createProductForm button {
+    background: #16a34a;
+    color: white;
+    margin-top: 10px;
+}
+
+#createProductForm button:hover {
+    background: #15803d;
+}
+
+/* Table */
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+/* Header */
+thead {
+    background: #2563eb;
+    color: white;
+}
+
+th,
+td {
+    padding: 14px;
+    text-align: center;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+/* Hover row */
+tbody tr:hover {
+    background: #f8fafc;
+}
+
+/* Action buttons */
+td button {
+    margin: 0 4px;
+    padding: 7px 12px;
+    color: white;
+}
+
+/* Edit button */
+td button:first-child {
+    background: #f59e0b;
+}
+
+td button:first-child:hover {
+    background: #d97706;
+}
+
+/* Delete button */
+td button:last-child {
+    background: #dc2626;
+}
+
+td button:last-child:hover {
+    background: #b91c1c;
+}

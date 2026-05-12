@@ -139,6 +139,13 @@
       "price": 349,
       "category": "gaming",
       "stock": 19
+    },
+    {
+      "id": "123",
+      "name": "123123",
+      "price": "123",
+      "category": "123",
+      "stock": "123"
     }
   ],
   "users": [
