@@ -8,18 +8,25 @@
 </head>
 <body>
     <main class="page">
-        <h1>Product List</h1>
-        <button onclick="createProductForm()">Create Product</button>
-        <form id="createProductForm"></form>
+        <section class="page-header">
+            <div>
+                <p class="eyebrow">Dashboard</p>
+                <h1>Product List</h1>
+            </div>
+            <button class="btn btn-primary" onclick="createProductForm()">Create Product</button>
+        </section>
+
+        <form id="createProductForm" class="product-form"></form>
+
         <div class="table-wrapper">
             <table>
                 <thead>
                     <tr>
-                        <th>id</th>
-                        <th>name</th>
-                        <th>price</th>
-                        <th>category</th>
-                        <th>stock</th>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Category</th>
+                        <th>Stock</th>
                         <th>Action</th>
                     </tr>
                 </thead>
